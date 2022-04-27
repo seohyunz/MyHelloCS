@@ -19,7 +19,7 @@ namespace MyHelloCS
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("반갑쿤~^*^라쿤라쿤" ,"라쿤좌가 말하길..", MessageBoxButtons.OK , MessageBoxIcon.Information);
         }
     }
 }
