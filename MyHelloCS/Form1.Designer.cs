@@ -28,13 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnHello = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnHello
+            // 
+            this.btnHello.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnHello.Font = new System.Drawing.Font("휴먼둥근헤드라인", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnHello.ForeColor = System.Drawing.SystemColors.Info;
+            this.btnHello.Location = new System.Drawing.Point(32, 61);
+            this.btnHello.Name = "btnHello";
+            this.btnHello.Size = new System.Drawing.Size(167, 84);
+            this.btnHello.TabIndex = 0;
+            this.btnHello.Text = "환영해요";
+            this.btnHello.UseVisualStyleBackColor = false;
+            this.btnHello.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(232, 199);
+            this.Controls.Add(this.btnHello);
             this.Name = "FormMain";
             this.Text = "MyHello";
             this.ResumeLayout(false);
@@ -42,6 +57,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnHello;
     }
 }
 
